@@ -47,7 +47,7 @@ try:
 	if sys.argv[1] == "--help" or sys.argv[1] == "/help" or sys.argv[1] == "-?" or sys.argv[1] == "/?" or sys.argv[1] == "-h" or sys.argv[1] == "/h":
 		logging.info("bili2md - 把B站专栏转换成Markdown")
 		logging.info("用法: python bili2md.py [cv号] <日志级别>")
-	sys.exit()
+		sys.exit()
 except IndexError:
 	logging.info("bili2md - 把B站专栏转换成Markdown")
 	logging.info("用法: python bili2md.py [cv号] <日志级别>")
