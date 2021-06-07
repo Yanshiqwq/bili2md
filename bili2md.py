@@ -7,7 +7,7 @@ try:
 except ModuleNotFoundError as e:
 	print("")
 	print("    #==================================#")
-	print("    |   bili2md v1.0 By @延时qwq       |")
+	print("    |   bili2md v1.0.1 By @延时qwq       |")
 	print("    #==================================#")
 	print("")
 	print("需要的库: sys, urllib3, logging, html2text, bs4")
@@ -28,7 +28,7 @@ try:
 except ModuleNotFoundError as e:
 	logging.info("")
 	logging.info("    #==================================#")
-	logging.info("    |   bili2md v1.0 By @延时qwq       |")
+	logging.info("    |   bili2md v1.0.1 By @延时qwq       |")
 	logging.info("    #==================================#")
 	logging.info("")
 	logging.error("需要的库: sys, urllib3, logging, html2text, bs4")
