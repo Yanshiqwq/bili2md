@@ -38,18 +38,21 @@ except ModuleNotFoundError as e:
 # 初始化
 text_maker = h2t.HTML2Text()
 http = urllib3.PoolManager()
-logging.debug("")
-logging.debug("    #==================================#")
-logging.debug("    |   bili2md v1.0 By @延时qwq       |")
-logging.debug("    #==================================#")
-logging.debug("")
 try:
 	if sys.argv[1] == "--help" or sys.argv[1] == "/help" or sys.argv[1] == "-?" or sys.argv[1] == "/?" or sys.argv[1] == "-h" or sys.argv[1] == "/h":
-		logging.info("bili2md - 把B站专栏转换成Markdown")
+		logging.info("")
+		logging.info("    #==================================#")
+		logging.info("    |   bili2md v1.0 By @延时qwq       |")
+		logging.info("    #==================================#")
+		logging.info("")
 		logging.info("用法: python bili2md.py [cv号] <日志级别>")
 		sys.exit()
 except IndexError:
-	logging.info("bili2md - 把B站专栏转换成Markdown")
+	logging.info("")
+	logging.info("    #==================================#")
+	logging.info("    |   bili2md v1.0 By @延时qwq       |")
+	logging.info("    #==================================#")
+	logging.info("")
 	logging.info("用法: python bili2md.py [cv号] <日志级别>")
 	logging.error("请输入cv号!")
 	sys.exit()
@@ -58,7 +61,11 @@ except IndexError:
 try:
 	http_req = http.request('GET', 'https://www.bilibili.com/read/' + sys.argv[1])
 except IndexError:
-	logging.info("bili2md - 把B站专栏转换成Markdown")
+	logging.info("")
+	logging.info("    #==================================#")
+	logging.info("    |   bili2md v1.0 By @延时qwq       |")
+	logging.info("    #==================================#")
+	logging.info("")
 	logging.info("用法: python bili2md.py [cv号] <日志级别>")
 	logging.error("请输入cv号!")
 	sys.exit()
